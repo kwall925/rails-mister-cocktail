@@ -1,0 +1,9 @@
+<%# <%= render 'form', cocktail: @cocktail %> 
+<%= simple_form_for([@cocktail]) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :name %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
